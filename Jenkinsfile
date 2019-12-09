@@ -9,8 +9,8 @@ pipeline {
                 sh 'pwd'
                 //sh 'sleep 420'
                //sh 'pytest test1.py  --junitxml=report.xml'
-                echo "${params.base} <<<<<<<<World!"
-                
+                //echo "${params.base} <<<<<<<<World!"
+                echo "GWBT_REPO_NAME: $GWBT_REPO_NAME"
         
             }
         }
@@ -24,9 +24,7 @@ pipeline {
         //new comment  
           
           
-       
-          
-    //comment1      
       }
    } 
+    
 }
