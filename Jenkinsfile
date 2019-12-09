@@ -10,6 +10,8 @@ pipeline {
                 //sh 'sleep 420'
                //sh 'pytest test1.py  --junitxml=report.xml'
                echo $id
+                
+                
         
             }
         }
