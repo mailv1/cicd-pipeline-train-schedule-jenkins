@@ -11,6 +11,10 @@ pipeline {
                //sh 'pytest test1.py  --junitxml=report.xml'
                 //echo "${params.base} <<<<<<<<World!"
                 echo "$WORKSPACE"
+                echo "JOB_NAME"
+                echo "BUILD_NUMBER"
+                
+                
         
             }
         }
@@ -21,7 +25,12 @@ pipeline {
         //sh 'rm -rf cicd-pipeline-train-schedule-git'  
         echo "post run"  
         //junit '/var/jenkins_home/*/*.xml'
-        //new comment10  
+        //new comment  
+        
+          
+          
+     
+          
           
           
       }
