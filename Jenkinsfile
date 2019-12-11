@@ -13,7 +13,7 @@ pipeline {
                 echo "$WORKSPACE"
                 echo "$JOB_NAME"
                 echo "$BUILD_NUMBER" 
-                echo "In branch"
+                
             }
         }
     }
