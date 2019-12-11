@@ -25,7 +25,7 @@ pipeline {
         //sh 'rm -rf cicd-pipeline-train-schedule-git'  
         echo "post run"  
         //junit '/var/jenkins_home/*/*.xml'
-        //new comment 500 
+        //new comment  
         
           
           
@@ -36,5 +36,6 @@ pipeline {
           
       }
    } 
+    
     
 }
