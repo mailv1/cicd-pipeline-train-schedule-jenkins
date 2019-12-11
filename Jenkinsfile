@@ -12,10 +12,8 @@ pipeline {
                 //echo "${params.base} <<<<<<<<World!"
                 echo "$WORKSPACE"
                 echo "$JOB_NAME"
-                echo "$BUILD_NUMBER"
-                
-                
-        
+                echo "$BUILD_NUMBER" 
+                echo "In branch"
             }
         }
     }
@@ -26,16 +24,6 @@ pipeline {
         echo "post run"  
         //junit '/var/jenkins_home/*/*.xml'
         //new comment  
-        
-          
-          
-     
-         
-          
-          
-          
       }
    } 
-    
-    
 }
