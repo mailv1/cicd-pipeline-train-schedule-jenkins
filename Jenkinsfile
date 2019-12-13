@@ -25,7 +25,7 @@ pipeline {
                     subject: 'Build failed in Jenkins: $BUILD_NUMBER'*/
 	      
 	
-          mail bcc: '', body: 'Build Report', cc: '', from: 'jenkins99019@gmail.com', replyTo: '', subject: 'Build Finished', to: 'jenkins99019@gmail.com         
+          mail bcc: '', body: 'Build Report', cc: '', from: 'jenkins99019@gmail.com', replyTo: '', subject: 'Build Finished', to: 'jenkins99019@gmail.com'         
        
 	//sh 'rm -rf cicd-pipeline-train-schedule-git'
 	echo "post run"
