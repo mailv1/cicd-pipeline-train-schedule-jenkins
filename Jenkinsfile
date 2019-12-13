@@ -23,9 +23,12 @@ pipeline {
 	 /*emailext body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGE_URL} \n\n ------- \n${BUILD_URL, maxLines=100, escapeHtml=false}', 
                     to: "jenkins99019@gmail.com", 
                     subject: 'Build failed in Jenkins: $BUILD_NUMBER'*/
+	 mail to: 'jenkins99019@gmail.com',
+             subject: "Failed Pipeline:",
+             body: "Something is wrong with"
 	      
 	
-          mail bcc: '', body: 'Build Report', cc: '', from: 'jenkins99019@gmail.com', replyTo: '', subject: 'Build Finished', to: 'jenkins99019@gmail.com'         
+         
        
 	//sh 'rm -rf cicd-pipeline-train-schedule-git'
 	echo "post run"
