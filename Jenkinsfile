@@ -25,11 +25,7 @@ pipeline {
                     subject: 'Build failed in Jenkins: $BUILD_NUMBER'*/
 	      
 	
-          step([$class: 'Mailer',
-            notifyEveryUnstableBuild: true,
-            recipients: "jenkins99019@example.com",
-            sendToIndividuals: true])
-             
+          mail bcc: '', body: 'Build Report', cc: '', from: 'jenkins99019@gmail.com', replyTo: '', subject: 'Build Finished', to: 'jenkins99019@gmail.com         
        
 	//sh 'rm -rf cicd-pipeline-train-schedule-git'
 	echo "post run"
