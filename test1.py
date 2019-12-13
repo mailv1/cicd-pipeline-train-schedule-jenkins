@@ -10,9 +10,3 @@ def test_answer():
     
     
     
-    
-    
-    
-    
-    
-    
