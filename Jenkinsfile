@@ -24,8 +24,8 @@ pipeline {
                     to: "jenkins99019@gmail.com", 
                     subject: 'Build failed in Jenkins: $BUILD_NUMBER'*/
 	 mail to: 'jenkins99019@gmail.com',
-             subject: "Failed Pipeline:",
-             body: "Something is wrong with"
+             subject: "Passed Pipeline:",
+             body: "Some result"
 	      
 	
          
