@@ -20,9 +20,16 @@ pipeline {
   
     post {
       always {
-	 emailext body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGE_URL} \n\n ------- \n${BUILD_URL, maxLines=100, escapeHtml=false}', 
+	 /*emailext body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGE_URL} \n\n ------- \n${BUILD_URL, maxLines=100, escapeHtml=false}', 
                     to: "jenkins99019@gmail.com", 
-                    subject: 'Build failed in Jenkins: $BUILD_NUMBER'
+                    subject: 'Build failed in Jenkins: $BUILD_NUMBER'*/
+	      
+	
+          step([$class: 'Mailer',
+            notifyEveryUnstableBuild: true,
+            recipients: "jenkins99019@example.com",
+            sendToIndividuals: true])
+             
        
 	//sh 'rm -rf cicd-pipeline-train-schedule-git'
 	echo "post run"
